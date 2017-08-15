@@ -1,0 +1,7 @@
+[
+  {
+  	"name":"backend",
+  	"url":"http://localhost:3000",
+  	"forwardAuthToken": true
+  }
+]

@@ -1,0 +1,24 @@
+---
+applications:
+- name: node-websocket-example
+  port: [approuter-port] #the port used for the approuter
+  memory: 128M
+  path: web
+  env:
+    destinations: >
+      [
+        {
+          "name":"backend",
+          "url":"https://[hostname]:[node-port]",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - uaa
+
+- name: node-websocket-example-backend
+  port: [node-port] #the port used for backend
+  path: js
+  memory: 128M
+  services:
+    - uaa

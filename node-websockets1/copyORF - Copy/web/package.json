@@ -1,0 +1,10 @@
+{
+  "name": "node-websocket-example",
+  "description": "Approuter for node-websocket-example",
+  "dependencies": {
+    "approuter": "1.5.2"
+  },
+  "scripts": {
+    "start": "node node_modules/approuter/approuter.js"
+  }
+}

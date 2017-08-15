@@ -1,0 +1,29 @@
+---
+applications:
+- name: location-app
+  host: d062804-location-app
+  domain: cfapps.sap.hana.ondemand.com
+  memory: 128M
+  path: web
+  env:
+    #TENANT_HOST_PATTERN = ^(.*)-<app-name>.cfapps.sap.hana.ondemand.com
+    destinations: >
+      [
+        {
+          "name":"backend",
+          "url":"https://d062804-location-app-backend.cfapps.sap.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - uaa
+
+- name: location-app-backend
+  host: d062804-location-app-backend
+  domain: cfapps.sap.hana.ondemand.com
+  path: js
+  memory: 128M
+  services:
+    - uaa
+  env:
+    SAP_JWT_TRUST_ACL: "[ {\"clientid\" : \"*\", \"identityzone\" : \"*\"} ]"

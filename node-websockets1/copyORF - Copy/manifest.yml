@@ -1,0 +1,26 @@
+---
+applications:
+- name: node-websocket-example
+  host: d062804-node-websocket-example
+  domain: cfapps.sap.hana.ondemand.com
+  memory: 128M
+  path: web
+  env:
+    destinations: >
+      [
+        {
+          "name":"backend",
+          "url":"https://d062804-node-websocket-example-backend.cfapps.sap.hana.ondemand.com",
+          "forwardAuthToken": true
+        }
+      ]
+  services:
+    - uaa
+
+- name: node-websocket-example-backend
+  host: d062804-node-websocket-example-backend
+  domain: cfapps.sap.hana.ondemand.com
+  path: js
+  memory: 128M
+  services:
+    - uaa

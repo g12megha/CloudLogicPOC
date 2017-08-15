@@ -1,0 +1,13 @@
+{
+  "name": "location-app",
+  "description": "Approuter for node-websocket-example",
+  "dependencies": {
+    "approuter": "1.5.2"
+  },
+  "engines": {
+   "node": "<=5.0.0"
+ },
+  "scripts": {
+    "start": "node node_modules/approuter/approuter.js"
+  }
+}

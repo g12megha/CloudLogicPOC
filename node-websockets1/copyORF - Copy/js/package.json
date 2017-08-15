@@ -1,0 +1,17 @@
+{
+  "name": "node-websocket-example-backend",
+  "description": "Backend websocket service",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.12.0",
+    "sap-xssec": "0.2.5",
+    "sap-xsenv": "1.0.1",
+    "socket.io": "1.3.7"
+  },
+  "engines": {
+    "node": "<=5.0.0"
+  },
+  "scripts": {
+    "start": "node ws-server.js"
+  }
+}

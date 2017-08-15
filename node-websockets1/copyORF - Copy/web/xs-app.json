@@ -1,0 +1,17 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "source": "^/socket.io(.*)",
+      "destination": "backend",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/(.*)",
+      "localDir": "static"
+    }
+  ],
+  "websockets": {
+    "enabled": true
+  }
+}

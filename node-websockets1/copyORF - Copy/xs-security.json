@@ -1,0 +1,18 @@
+{
+    "xsappname"     : "node-websocket-example",
+    "scopes": [{
+      "name": "$XSAPPNAME.Display",
+      "description": "display"
+    }, {
+      "name": "$XSAPPNAME.Edit",
+      "description": "edit"
+    }, {
+      "name": "$XSAPPNAME.Delete",
+      "description": "delete"
+    }],
+    "role-templates": [{
+      "name": "Admin",
+      "description": "refapps administrator",
+      "scope-references": ["$XSAPPNAME.Display", "$XSAPPNAME.Edit", "$XSAPPNAME.Delete"]
+    }]
+}

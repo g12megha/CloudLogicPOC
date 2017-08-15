@@ -1,0 +1,17 @@
+{
+"welcomeFile": "index.html",
+"routes": [
+
+  {
+       "destination": "backend",
+       "source": "^/testApp/(.*)$",
+       "target" : "$1"
+
+   },
+   {
+       "localDir": "static",
+       "source": "^/(.*)",
+        "scope": "$XSAPPNAME.Display"
+   }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "location-app-backend",
+  "version": "1.0.0",
+  "description": "Sample application to learn nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node meghaTestApp1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g12megha/Nodejs.git"
+  },
+  "keywords": [
+    "sample"
+  ],
+  "author": "megha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g12megha/Nodejs/issues"
+  },
+  "homepage": "https://github.com/g12megha/Nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "multer": "^1.2.1",
+    "cfenv": "*",
+    "sap-xssec": "0.2.5",
+   "sap-xsenv": "1.0.1",
+   "passport" : "*",
+   "circular-json" : "*"
+  },
+  "engines": {
+   "node": "<=5.0.0"
+ },
+  "devDependencies": {}
+}
